@@ -26,13 +26,14 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="./images/background.jpg" alt="">
             </div>
             <div class="banner">
                 <h1>Web Developer & Computer Science Student</h1>
                 <p>Alexys Santiago</p>
+                <a href="https://github.com/SuxPorT/front-end-study" target="_blank">Código fonte do site</a>
                 <a href="./files/CV_Alexys_Santiago.pdf" target="_blank">Currículo Pessoal</a>
             </div>
         </header>
@@ -40,11 +41,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="#knowledges" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#projects" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#contact" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#budget" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
 
@@ -119,7 +120,7 @@
                     <img src="./images/knowledges.png" alt="Imagem conhecimentos">
                 </div>
             </div>
-        </section>
+        </section><br>
 
         <setcion class="projects-section" id="projects">
             <div class="header-section">
@@ -134,8 +135,8 @@
                     <div class="card-info">
                         <h2>Personal Website</h2>
                         <h3>HTML5, CSS3, Bootstrap</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente consectetur velit. Cupiditate in, quisquam, saepe autem earum ex ut natus fugiat quasi iure aperiam accusantium ea quae enim inventore.</p>
-                        <a class="button" href="https://github.com/SuxPorT/personal-website" target="_blank">Códifo Fonte</a>
+                        <p>Projeto pessoal usado como portfólio de programação, demonstrando os projetos criados, tanto os pessoais quanto os de fim acadêmico.</p>
+                        <a class="btn" href="https://github.com/SuxPorT/personal-website" target="_blank">Códifo Fonte</a>
                     </div>
                 </div>
                 <div class="cards">
@@ -145,8 +146,8 @@
                     <div class="card-info">
                         <h2>Sistema de Login</h2>
                         <h3>Apache, MySQL, PHP</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente consectetur velit. Cupiditate in, quisquam, saepe autem earum ex ut natus fugiat quasi iure aperiam accusantium ea quae enim inventore.</p>
-                        <a class="button" href="https://github.com/SuxPorT/login-system" target="_blank">Códifo Fonte</a>
+                        <p>Projeto criado com o propósito de fazer a integração entre MySQL e PHP.</p>
+                        <a class="btn" href="https://github.com/SuxPorT/login-system" target="_blank">Códifo Fonte</a>
                     </div>
                 </div>
                 <div class="cards">
@@ -156,12 +157,66 @@
                     <div class="card-info">
                         <h2>CRUD</h2>
                         <h3>Apache, MySQL, PHP</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente consectetur velit. Cupiditate in, quisquam, saepe autem earum ex ut natus fugiat quasi iure aperiam accusantium ea quae enim inventore.</p>
-                        <a class="button" href="https://github.com/SuxPorT/CRUD" target="_blank">Códifo Fonte</a>
+                        <p>Projeto criado com o propósito de criar um CRUD com MySQL e PHP.</p>
+                        <a class="btn" href="https://github.com/SuxPorT/CRUD" target="_blank">Códifo Fonte</a>
                     </div>
                 </div>
             </div>
         </setcion>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-wrapper">
+                <div class="contact-left"></div>
+                <div class="contact-right">
+                    <h1>Contato</h1>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="field" id="name">
+                            <label for="name" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="message"></textarea>
+                            <label for="message" class="field-label">Mensagem</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="budget-section" id="budget">
+            <div class="budget-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form action="">
+                    <label for="quantity">Quantidade de páginas</label>
+                    <input type="number" min="1" max="10" name="quantity" id="quantity">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+
+                    <label for="">Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-yes">
+                            <label for="layout-yes">Preciso de um Layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-no">
+                            <label for="layout-no">Já tenho um Layout</label>
+                        </div>
+                    </div>
+
+                    <label for="deadline">Prazo</label>
+                    <input type="range" name="deadline" id="deadline">
+                    
+                    <button type="submit" class="btn btn-budget">Enviar</button>
+                </form>
+            </div>
+        </section>
     </div>
 </body>
 
