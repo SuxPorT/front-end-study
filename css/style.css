@@ -194,6 +194,8 @@ header {
     z-index: 1;
     transition: all 0.5s;
     border: 1px solid rgb(210, 210, 210);
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
 }
 
 .show-menu .sidebar {
@@ -596,9 +598,70 @@ header {
     padding: 0.3rem;
 }
 
-.btn-budget {
+.budget-section button {
+    width: 100%;
     text-transform: uppercase;
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17101B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secondary);
+    color: #A7A7A7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #A7A7A7;
+    font-size: 1.3rem;
+    transition: color 0.5s;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+.social-list a:hover {
+    color: #A044FF;
+}
+
+#link-top {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #834d9b;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to left, #d04ed6, #834d9b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, #d04ed6, #834d9b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.6rem #000000;
+}
+
+#link-top:hover {
+    color: #FF4081;
+    opacity: 0.8;
 }
